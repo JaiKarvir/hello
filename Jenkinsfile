@@ -9,8 +9,9 @@ pipeline {
                 sh 'npm --version'
                 script{
                     //echo "Hello"
-                def res = errorAndExceptionHandling("xyz","start_time","end_time","./DodConfig.yaml");
-                println("FinalResult: ${res}")
+                    qtestbaseddod();
+                //def res = errorAndExceptionHandling("xyz","start_time","end_time","./DodConfig.yaml");
+                //println("FinalResult: ${res}")
                 }
             }
         }
